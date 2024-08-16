@@ -31,7 +31,7 @@ public class DataBaseConfig {
      */
     public static Connection stablishConnection(String dbName)throws SQLException, Exception{
 
-        final String url = "jdbc:myql//localhost:3306/" + dbName;
+        final String url = "jdbc:mysql://localhost:3306/" + dbName;
         final String user = "root";
         return DriverManager.getConnection(url, user, "1234");
 
